@@ -1,64 +1,73 @@
-# AI-Powered Real-Time Feedback System - Frontend
+# SentimentAI – Real-Time Feedback Analysis
 
-This is the frontend repository for the AI-Powered Real-Time Feedback System. The system provides real-time sentiment analysis of user feedback using AI, with a clean and responsive UI.
+**SentimentAI** is a real-time feedback analysis system that uses AI to analyze user feedback and categorize it into three sentiment types: positive, negative, and neutral. This project includes both the **frontend** and **backend** components, which work together to provide a seamless feedback experience.
+
+---
 
 ## Features
+- **AI-Powered Sentiment Analysis**: Uses AI to analyze user-submitted feedback and determine sentiment.
+- **Real-Time Feedback**: Immediate analysis of feedback as it's submitted.
+- **Positive, Negative, Neutral Categorization**: Provides instant feedback classification into three categories.
+- **User Interface**: Intuitive and easy-to-use frontend to submit feedback.
+- **API Integration**: A backend that handles feedback data and sentiment analysis requests.
 
-- User-friendly form for submitting feedback (name, email, and feedback).
-- Real-time sentiment analysis result displayed with color-coded indicators (positive, neutral, negative).
-- Built with **React.js** and styled using **Tailwind CSS** or **Shadcn/UI**.
-- CI/CD pipeline integrated with **GitHub Actions** to ensure continuous testing and deployment.
+---
 
 ## Tech Stack
 
-- **React.js**: A JavaScript library for building user interfaces.
-- **Tailwind CSS** / **Shadcn/UI**: For styling the UI components.
-- **GitHub Actions**: For continuous integration and deployment.
+### Frontend
+- **React**: For building the user interface.
+- **JavaScript, HTML, CSS**: Core technologies for frontend development.
 
-## Prerequisites
+### Backend
+- **Node.js**: For handling backend operations and API requests.
+- **Express.js**: Web framework to create API endpoints.
+- **AI Model**: Utilizes a trained model for sentiment analysis (e.g., Natural Language Processing techniques).
 
-Before you begin, ensure you have the following installed:
-
-- **Node.js** (v18.x or higher)
-- **npm** (comes with Node.js)
+---
 
 ## Installation
 
+### Backend Setup
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/Amit-Dey/AI-Feedback-Backend.git
+   ```
+2. Install dependencies:
+   ```bash
+   cd AI-Feedback-Backend
+   npm install
+   ```
+3. Start the backend server:
+   ```bash
+   npm start
+   ```
+The backend will now be running on http://localhost:5000 (or the port you’ve configured).
 
+### Frontend Setup
+1. Clone the repository:
    ```bash
    git clone https://github.com/Amit-Dey/AI-Feedback-Frontend.git
-
-    ```
-2. Navigate to the project directory:
-
+   ```
+2. Install dependencies:
    ```bash
    cd AI-Feedback-Frontend
+   npm install
    ```
-3. Install the dependencies:
-
+3. Start the frontend application:
    ```bash
-    npm install
-    ```
-## Running the Application
-To start the React development server, run:
-    
- ```bash
- npm start
- ```
-## Building for Production
-To create a production build of the app:
-    
- ```bash
- npm run build
- ```
-The production-ready files will be in the build/ folder.
+   npm start
+   ```
+The frontend will now be running on http://localhost:3000.
 
-## CI/CD Pipeline
-The repository is set up with a GitHub Actions pipeline. It automatically runs tests and builds the project whenever code is pushed to the main branch or a pull request is created.
+### How It Works
+1. User submits feedback via the frontend interface.
+2. The feedback is sent to the backend API, which processes it through an AI model for sentiment analysis.
+3. The backend returns the sentiment result (positive, negative, neutral).
+4. The frontend displays the sentiment result to the user in real-time.
 
-## Contributing
-Feel free to fork this project, submit issues, or create pull requests.
+### Contributions
+Feel free to fork the repository, open issues, and submit pull requests for improvements or bug fixes. Contributions are welcome!
 
-## License
-This project is open-source and available under the [MIT License](LICENSE).
+### License
+This project is licensed under the MIT License.
